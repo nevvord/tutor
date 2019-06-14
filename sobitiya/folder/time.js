@@ -1,3 +1,4 @@
+'use strict';
 /*
 let timerId = setTimeout(sayHelo, 3000);
 clearTimeout(timerId);

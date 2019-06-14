@@ -1,3 +1,4 @@
+'use strict';
 let btn = document.querySelectorAll('button'),
     wrap = document.querySelector('.wrapper'),
     link = document.querySelector('a');
