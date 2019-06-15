@@ -1,3 +1,4 @@
+'use strict';
 /*
 function User(name, id){
     this.name = name;
@@ -22,6 +23,7 @@ console.log(alex);
 ivan.exit();
 */
 
+/*
 class User {
     constructor(name, id) {
         this.name = name;
@@ -43,9 +45,45 @@ console.log(UsNow);
 console.log(UsNow.id);
 UsNow.hello();
 UsNow.exit();
+*/
+/*
+let user = {
+    name: 'lalka'
+};
+
+function showName(serName) {
+    console.log(this);
+    console.log(this.name + serName);
+}
+
+console.log(showName.call(user, ' Palka'));
+console.log(showName.apply(user, [' Skakalka']));
+
+function count(num) {
+    return this * num;
+}
+
+let double = count.bind(2);
+
+console.log(double(3));
+console.log(double(10));
+console.log(double(7));
+*/
+
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+  }
+
+let btn = document.querySelector('button');
+
+btn.addEventListener('click', function () {
+    console.log(this);
+    this.style.backgroundColor = '#' + getRandomInt(100,999);
+});
 
 
 
-
-
-
+// 1) Простой вызов this ссылается к window/undefined
+// 2) Метод объекта - this ссылается к объекту
+// 3) Конструктор (new) - this ссылается на новый созданый объект 
+// 4) Указанием конкретного контекста - call, apply, bind
