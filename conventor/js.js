@@ -1,4 +1,4 @@
-//'use strict';
+'use strict';
 let inputUa = document.getElementById('ua'),
     inputUsd = document.getElementById('usd');
 

@@ -1,0 +1,86 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+}
+
+ul {
+    background-color: rgb(172, 163, 139);
+    border-bottom: 2px solid rgb(122, 120, 107);
+    height: 29px;
+}
+
+li {
+    height: 19px;
+    display: inline-block;
+    font-size: 16px;
+    padding: 5px;
+    border-left: 1px solid rgb(122, 120, 107); 
+    color: aliceblue;
+    style: none;
+    transition-duration: 1s;
+}
+
+li:first-child {
+    border: none;
+}
+
+li:last-child {
+    float: right;
+    padding: 5px 25px;
+}
+
+li:last-child:hover {
+    padding: 5px 25px;
+}
+
+li:hover {
+    padding: 5px 15px;
+    cursor: pointer; 
+}
+
+.formaAvtoriz {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 35%;
+    transform: translateX(-50%);
+    width: 250px;
+    border: 2px solid #862;
+    border-radius: 5px;
+    padding: 10px;
+    transition-duration: 0.5s;
+    box-shadow: 0 0 10px 6000px rgba(58, 65, 82, 0.397);
+}
+
+#avtorizButton {
+    display: block;
+    margin-top: 1%;
+    padding: 3px;
+    border-radius: 3px;
+    background-color: rgb(156, 235, 156);
+    border: 1px solid #192;
+    font-size: 18px;
+}
+
+input {
+    border-radius: 3px;
+    border: 1px solid #353a61;
+    padding: 4px;
+    background-color: aliceblue;
+}
+
+#x {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-color: rgb(143, 42, 42);
+    color: aliceblue;
+    width: 25px;
+    height: 25px;;
+    vertical-align: center;
+    text-align: center;
+    cursor: pointer;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
