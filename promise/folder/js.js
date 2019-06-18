@@ -9,9 +9,7 @@ function formSend (){
     console.log(JSON.parse(request.status));
     let data = JSON.parse(kek); 
 }
-*/
 
-/*
 localStorage.setItem("login", 1); // Присваеваем локалу
 console.log("Получил с гет айтема " + localStorage.getItem("login")); // Получил ключем
 localStorage.removeItem("login"); // Очистка ключем
@@ -69,6 +67,16 @@ let formAvtoriz = document.querySelector('.formaAvtoriz'),
     userName = localStorage.getItem("userName");
 
     userName != null ? blockUser.innerHTML = `Привет ${userName}`: 1 ;
+
+$('li:first').click(() => {
+    console.log('hi');
+    
+    $(this).css({'margin': '15px'});
+});
+
+$('.bar').hide();
+let barOpened = false;
+$('.openBar').click(() => {$('.bar').fadeToggle('fast')});
 
 
 

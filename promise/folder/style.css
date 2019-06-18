@@ -19,6 +19,7 @@ li {
     color: aliceblue;
     style: none;
     transition-duration: 1s;
+    cursor: pointer;
 }
 
 li:first-child {
@@ -30,14 +31,15 @@ li:last-child {
     padding: 5px 25px;
 }
 
-li:last-child:hover {
+li:last-child {
     padding: 5px 25px;
 }
 
-li:hover {
+lili:hover {
     padding: 5px 15px;
     cursor: pointer; 
 }
+
 
 .formaAvtoriz {
     display: none;
@@ -83,4 +85,19 @@ input {
     cursor: pointer;
     border-top-right-radius: 3px;
     border-bottom-left-radius: 3px;
+}
+
+.bar {
+    width: auto;
+    height: auto;
+    position: absolute;
+    margin: 7px auto auto -6px ;
+    border: none;
+}
+.bar li {
+    padding: 5px;
+    display: block;
+    border-left: 1px solid rgb(122, 120, 107); 
+    border-bottom: 1px solid rgb(122, 120, 107); 
+    border-right: 1px solid rgb(122, 120, 107); 
 }
